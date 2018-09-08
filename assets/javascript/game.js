@@ -6,10 +6,21 @@ var gustLeft=0;
 var gust=0;
 //pick random letter
 var myArray = letters[Math.floor(Math.random()*letters.length)];
-
-
 console.log(myArray)
 
+document.onkeyup = (event) =>{
+    var kee= event.key.toUpperCase(); 
+    console.log(kee)
+    
+    if(kee === myArray){
+        win++;
+ console.log(win)
+}
+if(kee !== myArray){
+    loose++;
+console.log(loose)
+}
+}
 
 
 
